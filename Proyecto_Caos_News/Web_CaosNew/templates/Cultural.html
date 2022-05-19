@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+  <title>Cultural</title>
+{% endblock titulo %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/EstiloGaleria.css' %}">
+{% endblock css%}
+
+{% block contenido %}
+    <!-- Galeria -->
+  <Section id="galeria" class="container">
+    <div class="text-center pt-5">
+      <h1>Noticias Culturales</h1>
+    </div>
+    <div class="row">
+
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT2' %}">
+            <img src="{% static 'img/dia-del-libro.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Día del libro 2022: la importancia de fomentar la lectura en tiempos de
+              pandemia</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </Section>
+
+  <!--Separador-->
+  <div class="separador">
+    <h1>
+       
+    </h1>
+  </div>
+{% endblock contenido %}

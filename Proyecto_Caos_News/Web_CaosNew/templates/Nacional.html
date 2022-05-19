@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+  <title>Nacional</title>
+{% endblock titulo %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/EstiloGaleria.css' %}">
+{% endblock css%}
+
+{% block contenido %}
+  <!-- Galeria -->
+  <Section id="galeria" class="container">
+    <div class="text-center pt-5">
+      <h1>Noticias Nacionales</h1>
+    </div>
+    <div class="row">
+
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT4' %}">
+            <img src="{% static 'img/Gabriel-Boric-3.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Cadem: Desaprobación al presidente Boric alcanza el 50% y supera por
+              primera vez a la aprobación</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </Section>
+
+  <!--Separador-->
+  <div class="separador">
+    <h1>
+       
+    </h1>
+  </div>
+{% endblock contenido %}

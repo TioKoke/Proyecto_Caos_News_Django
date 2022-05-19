@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static  %}
+
+{% block titulo %}
+  <title>Galeria</title>
+{% endblock titulo %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/EstiloGaleria.css' %}">
+{% endblock css%}
+
+{% block contenido%}
+    <!-- Galeria -->
+  <Section id="galeria" class="container">
+    <div class="text-center pt-5">
+      <h1>Ultimas Noticias</h1>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT1' %}">
+            <img src="{% static 'img/caldillo-congrio.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">"Caldillo de Congrio Poético": Revisa el séptimo capítulo de Cocina
+              Paradiso</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT2' %}">
+            <img src="{% static 'img/dia-del-libro.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Día del libro 2022: la importancia de fomentar la lectura en tiempos de
+              pandemia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT6' %}">
+            <img src="{% static 'img/escuela-it.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">!Nuevos Administrativos de Informatica!:¿Heroes o Amenaza?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT3' %}">
+            <img src="{% static 'img/Diseño-sin-título-1-3-740x420.png' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Pymes dan el paso a la digitalización: Revisa todos los episodios de
+              Digitalizados 4</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT4' %}">
+            <img src="{% static 'img/Gabriel-Boric-3.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Cadem: Desaprobación al presidente Boric alcanza el 50% y supera por
+              primera vez a la aprobación</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <a href="{% url 'NOT5' %}">
+            <img src="{% static 'img/header_alumnos-1.jpg' %}" alt="">
+          </a>
+          <div class="card-body">
+            <p class="card-text">Duoc UC y UNESCO-UNEVOC, unidos por la Educación Técnico Profesional en
+              Chile</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!--Separador-->
+  <div class="separador">
+    <h1>
+       
+    </h1>
+  </div>
+{% endblock contenido%}

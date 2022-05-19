@@ -1,0 +1,73 @@
+{% extends "base1.html" %}
+{% load static  %}
+
+{% block titulo %}
+  <title>Noticia 2</title>
+{% endblock titulo %}
+
+{% block contenedor %}
+    <!-- parrafo -->
+    <div class="contenedorT">
+      <div class="titulo">
+          <h1>Día del libro 2022: la importancia de fomentar la lectura en tiempos de pandemia</h1>
+      </div>
+      <div class="datos">
+          Publicado por : Jorge Tapia <br>
+          Fecha de publicacion : 10/04/2022 <br>
+          Categoria : Nacional
+      </div>
+      <div class="contenedor">
+        <div class="contenedorI">
+          <input id="submit" type="submit" value="Mas imagenes;">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/diadellibro1.jpg' %}" class="card-img-top materialboxed" alt="...">
+            <div class="card-body">
+              <input id="submit2" type="submit" value="imagen 1">                         
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/diadellibro2.jpg' %}" class="card-img-top materialboxed" alt="...">
+            <div class="card-body">
+              <input id="submit2" type="submit" value="imagen 2">                      
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/diadellibro3.jpg' %}" class="card-img-top materialboxed" alt="...">
+            <div class="card-body">
+              <input id="submit2" type="submit" value="imagen 3">
+            </div>
+          </div>
+          <input id="submit1" type="submit" value="Mas noticias;">
+          <div class="card" style="width: 18rem;">
+            <a href="{% url 'NOT3' %}">
+              <img src="{% static 'img/Diseño-sin-título-1-3-740x420.png' %}" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <p class="card-text">Pymes dan el paso a la digitalización: Revisa todos los episodios de Digitalizados 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="contenedorP">
+          <div class="imagen">
+            <img src="{% static 'img/dia-del-libro.jpg' %}" alt="">
+            <p>Un nuevo Día Internacional del Libro y del Derecho de Autor se celebrará en la próxima semana en Chile y el resto del mundo. Se conmemora en una jornada que ya se ha hecho tradicional con los años.</p>
+        </div>
+        <div class="parrafo">
+            <p>
+                La conmemoración del Día Mundial del Libro destaca una fecha simbólica en la literatura universal que coincide con el fallecimiento de tres de los más grandes escritores en la historia de la humanidad: Cervantes, Shakespeare y el Inca Garcilaso de la Vega, quienes nos legaron obras notables que se transformaron en el paradigma estético de la literatura española e inglesa. <br>
+                El enorme talento creativo de estos genios quedó reflejado especialmente en tres obras que la crítica y los estudiosos han considerado fundamentales: “El Ingenioso Hidalgo Don Quijote de la Mancha”, “Hamlet” y “Comentarios reales de los Incas”. Obras que resaltan en la ficción, el valor de la lectura, de la imaginación y de la libertad. <br> <br>
+                En 1995, la Unesco acordó que cada 23 de abril se conmemoraría el Día Mundial del Libro y del Derecho de Autor para rendir homenaje a estos escritores y promover la lectura. Una preocupación que históricamente han compartido las Universidades del Estado, para las que el libro representa un símbolo de desarrollo intelectual y de creatividad literaria, llevándolas a financiar cientos de revistas científicas y artísticas y a mantener una red de editoriales que recientemente se han visto revitalizadas gracias a los procesos de digitalización. <br>
+                Sin duda, la conmemoración del Día Mundial del Libro ha estado marcada estos últimos dos años por una pandemia que ha arrebatado la vida a millones de personas, en las que se incluyen también a cientos de escritores y entre ellos a varios chilenos. <br> <br>
+                En este contexto, donde las cifras alarmantes y las cuarentenas pesan, cobra aún más valor la lectura como un espacio que puede fomentar la creatividad, enriquecer el mundo interior y combatir el aislamiento. <br>
+                Conscientes de esto y de lo significativo que puede ser abrir espacios culturales, las universidades estatales han hecho esfuerzos por recuperar y apoyar actividades emblemáticas relacionadas con la música, el cine, el teatro, las culturas migrantes, las artes, la memoria, entre otras. <br> <br>
+                La Red de Artes, Culturas y Patrimonio de las Universidades del Estado, ha mantenido una cartelera cultural conjunta que incluye en su agenda actividades relacionadas con el fomento del libro. Además, se encuentra implementando diálogos sobre temas como la política, la participación, las identidades y los derechos culturales, para aportar a las reflexiones sobre la nueva Constitución y el reposicionamiento de la vida cultural del país. <br>
+                En este Día del Libro 2021, se hace más importante recuperar la palabra literaria, de los tres escritores a los que conmemora esta fecha, quienes a través de su literatura le rindieron homenaje a la vida y a la trascendencia humana.
+                La lectura nos dará en este contexto, la oportunidad de sentirnos más cerca, de recuperar energía y de soñar en todos los mundos posibles, a través de los que superaremos el espanto y recobraremos la esperanza.
+
+
+            </p>
+        </div>
+        </div>
+      </div>
+    </div>
+{% endblock contenedor %}

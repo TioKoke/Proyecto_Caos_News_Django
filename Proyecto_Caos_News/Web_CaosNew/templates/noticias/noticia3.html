@@ -1,0 +1,84 @@
+
+{% extends "base1.html" %}
+{% load static  %}
+
+{% block titulo %}
+  <title>Noticia 2</title>
+{% endblock titulo %}
+
+{% block contenedor %}
+    <!-- parrafo -->
+    <div class="contenedorT">
+      <div class="titulo">
+          <h1>Pymes dan el paso a la digitalización: Revisa todos los episodios de Digitalizados 4</h1>
+      </div>
+      <div class="datos">
+          Publicado por : Liam De Pablo <br>
+          Fecha de publicacion : 18/04/2022 <br>
+          Categoria : Nacional
+      </div>
+      <div class="contenedor">
+          <div class="contenedorI">
+            <input id="submit" type="submit" value="Mas imagenes;">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'img/pymes1.png' %}" class="card-img-top materialboxed" alt="...">
+              <div class="card-body">
+                <input id="submit2" type="submit" value="imagen 1">
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'img/pymes2.jpg.opdownload' %}" class="card-img-top materialboxed" alt="...">
+              <div class="card-body">
+                <input id="submit2" type="submit" value="imagen 2">
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'img/pymes3.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <input id="submit2" type="submit" value="imagen 3">
+              </div>
+            </div>
+            <input id="submit1" type="submit" value="Mas noticias;">
+            <div class="card" style="width: 18rem;">
+              <a href="{% url 'NOT2' %}">
+                <img src="{% static 'img/dia-del-libro.jpg' %}" class="card-img-top materialboxed" alt="...">
+              </a>
+              <div class="card-body">
+                <p class="card-text">Día del libro 2022: la importancia de fomentar la lectura en tiempos de pandemia</p>
+              </div>
+            </div>
+          </div>
+          <div class="contenedorP">
+              <div class="imagen">
+                  <img src="{% static 'img/Diseño-sin-título-1-3-740x420.png' %}" alt="">
+                  <p>La tecnologia avanza a pasos agigantados no te pierdas la siguiente informacion  sobre estas</p>
+              </div>
+              <div class="parrafo">
+                  <p>
+                      No es un secreto: el <b>mundo digital</b> avanza cada vez más y las personas debemos elegir si sumarnos a la ola o quedarnos en el pasado. <br> <br>
+                      Por lo mismo, Entel Empresas, a través de la cuarta temporada del docureality Digitalizados, nos muestra cómo los negocios se pueden trasformar y evolucionar con las herramientas necesarias. <br> <br>
+                  </p>
+                  <h4 style="text-align: justify; margin-left: 4em;">Panadería La Duquesa:</h4>
+                  <p>
+                      Yosmery López y su familia llegaron a Chile desde Venezuela hace cuatro años y fundaron la Panadería La Duquesa. “Hay muchos pedidos y estoy sola, colapso por completo, no puedo atender a tantas personas con tantos pedidos”, aseguró. Por lo mismo, López sabía que “necesitamos digitalizar nuestra empresa para también tener más tiempo con nuestros hijos”. <br> <br>
+                      Luego de participar en Digitalizados, La Duquesa aumentó sus ventas en un 70%: “Nos ayudó a crecer masivamente”. <br> <br>
+                  </p>
+                  <h4 style="text-align: justify; margin-left: 4em;">Upcycling Chile:</h4>
+                  <p>
+                      Ignacio Narváez es cofundador de Upcycling Chile, una pyme que transforma residuos plásticos en diseño, con el objetivo de “crear un medio ambiente sin contaminación y demostrar que el plástico no es basura“. <br> <br>
+                      La experiencia de Ignacio en Digitalizados lo ayudó a despedirse de la pizarra y conocer “herramientas que nos permitieron ordenar nuestras finanzas (…) las cotizaciones fueron más rápidas y también tomar decisiones financieras de inversión”. <br> <br>
+                  </p>
+                  <h4 style="text-align: justify; margin-left: 4em;">Huevos La Castellana:</h4>
+                  <p>
+                      La gerente general de Huevos La Castellana, Antonia Reyes, se atrevió a abandonar la escritura manual para modernizar su negocio junto a la ayuda de Entel Empresas. ¿Cuánto subieron las ventas tras digitalizar el negocio? Un 50%. <br> <br>
+                  </p>
+                  <h4 style="text-align: justify; margin-left: 4em;">Functional Coach NM:</h4>
+                  <p>
+                      Nicolás Muñoz es fundador de Functional Coach NM, pyme de entrenamiento funcional y acondicionamiento físico en Ñuñoa y Las Condes.”La principal deficiencia que tenemos es el tema de los pagos, se nos hace super complejo cobrarle a 350 personas por WhatsApp”, detalló. <br> <br>
+                      Todo mejoró desde que Muñoz se atrevió a digitalizarse: “Tenemos un mayor control de nuestros clientes, podemos entregar un mejor servicio. En base a la aplicación y plataforma que nos entregó Digitalizados, nos coordinamos mejor”. 
+                  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+{% endblock contenedor %}

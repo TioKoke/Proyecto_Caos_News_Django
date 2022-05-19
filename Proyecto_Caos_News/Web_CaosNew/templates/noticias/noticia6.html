@@ -1,0 +1,73 @@
+
+{% extends "base1.html" %}
+{% load static  %}
+
+{% block titulo %}
+  <title>Noticia 2</title>
+{% endblock titulo %}
+
+{% block contenedor %}
+    <!-- parrafo -->
+    <div class="contenedorT">
+      <div class="titulo">
+          <h1>!Nuevos Administrativos de Informatica!:¿Heroes o Amenaza?</h1>
+      </div>
+      <div class="datos">
+          Publicado por : Camilo Santander <br>
+          Fecha de publicacion : 14/04/2022 <br>
+          Categoria : Regional
+      </div>
+      <div class="contenedor">
+        <div class="contenedorI">
+          <input id="submit" type="submit" value="Mas imagenes;">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/directivos3.webp' %}" class="card-img-top materialboxed" alt="...">
+            <div class="card-body">
+              <input id="submit2" type="submit" value="imagen 1">
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/directivo2.webp' %}" class="card-img-top materialboxed" alt="...">
+            <div class="card-body">
+              <input id="submit2" type="submit" value="imagen 2">
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/directivo1.jpg' %}" class="card-img-top materialboxed" alt="...">
+            <div class="card-body">
+              <input id="submit2" type="submit" value="imagen 3">
+            </div>
+          </div>
+          <input id="submit1" type="submit" value="Mas noticias;">
+          <div class="card" style="width: 18rem;">
+            <a href="{% url 'NOT2' %}">
+              <img src="{% static 'img/dia-del-libro.jpg' %}" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <p class="card-text">Día del libro 2022: la importancia de fomentar la lectura en tiempos de pandemia</p>
+            </div>
+          </div>
+        </div>
+        <div class="contenedorP">
+          <div class="imagen">
+            <p><img src="{% static 'img/escuela-it.jpg' %}" alt=""></p>
+            <p>Profundizamos en el que, para los estudiantes de informatica del intituto Duoc UC Puente Alto, es uno de los problemas que mas los esta aquejando.</p>
+        </div>
+        <div class="parrafo">
+
+            <p>
+                Segun los diferentes testimonios de los estudiantes y profesores de la organizacion, hemos encontrado un grave problema de interes por partes de los directivos de la institucion. <br> <br>
+                No solo los distintos testimonios rescatados de nuestra investigacion, si no que tambien, estan los hechos, como por ejemplo, <b>cursos que no han tenido un profesor fijo</b> habiando pasado un mes del semestre del año 2022, <b>falta de renovacion de los recursos tecnologicos</b> de la institucion, lo cual trae <b>un hambiente no apto para el estudio</b>. Salas con el aire acondicionado descompuesto, como computadores que dan pantallazos azules, perdiendo todo el avance hecho en clases y ademas, recalcar que estos <b>demoran demasiado en cumplir las funciones requeridas para la clase.</b> <br> <br>
+                Segun testimonios <i>"los computadores debian de haber sido cambiados ya hace dos años, y no solo eso, si no que, los mantendran por un año mas"</i>. <br> <br>
+                Las dintintas declaraciones llegan a un acuerdo <b>No están preparados para enfrentarse a todo lo que les pueda surgir en la intitucion.</b> <br> <br>
+                He aqui una de los cuantas aseveracion rescatadas en nuestra investigacion<i>« caracen de las tecnicas necesarias, como por ejemplo, cómo delegar, cómo utilizar la empatía para captar el punto de vista del otro, cómo usar la sinergia para generar una tercera alternativa». Jorge Tapia</i> <br> <br>
+                En conclusion <b>los directivos no estan capacitados para liderar una institucion como Duoc</b> , y no falta poco para que estos se vayan despidiendo de sus cargos. <br> <br>
+                El alza de la desaprobación superó, por primera vez, a la que anota en la aprobación, ya que tuvo una disminución y llegó a un 40%, la cifra más baja desde que tomara las riendas del país. <br> <br>           
+                Las dintintas declaraciones llegan a un acuerdo <b>No están preparados para enfrentarse a todo lo que les
+                pueda surgir en la intitucion.
+            </p>
+        </div>
+        </div>
+      </div>
+    </div>
+{% endblock contenedor %}

@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block titulo %}
+        
+    {% endblock titulo %}
+    <link rel="icon" href="{% static 'img/Logo Caos News.png' %}">
+    <!-- Libreria Bootstrap CSS-->
+    <link rel="stylesheet" href="{% static 'libs/BootStrap/css/bootstrap.min.css' %}">
+    {% block css %}
+
+    {% endblock css %}
+    </head>
+
+    <body>
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'HOME' %}">
+            <img src="{% static 'img/Logo Caos News.png' %}" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            Caos News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'HOME' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'GALE' %}">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'CONT' %}">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'BUSCA' %}">Buscar Noticias</a>
+                </li>
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'AGRE' %}">Agregar Noticia</a>
+                </li>
+            {%endif%}
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: right;">
+                <ul class="navbar-nav me-auto d-flex offset-9 mb-2 mb-lg-0">
+                    {% if user.is_authenticated %}
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'CERRAR' %}">Cerrar Sección</a>
+                        </li>
+                    {%else%}
+                        <li class="nav-item ">
+                            <a class="nav-link " aria-current="page" href="{% url 'LOGI' %}">Login</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'REGIS' %}">Registro</a>
+                        </li>                       
+                    {%endif%}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block contenido %}
+
+    {% endblock contenido %}
+    
+    <!-- footer-->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <hr class="mb-4">
+
+        <div class="container text-center text-md-left">
+
+        <div class="row aling-items-center">
+            <div class="col-md-6  offset-md-3">
+            <img src="{% static 'img/Logo Caos News.png' %}" alt="" width="60" height="60">
+            </div>
+        </div>
+
+        <div class="row text-center text-md-left">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h4 class="text-uppercase mb-4 font-weight-bold text-white">CAOS NEWS</h4>
+            <p>El mejor noticiario local "Caso News", fue creado para mantener a nuestro miembros actualizados con las
+                ultimas noticias del momento.</p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h4 class="text-uppercase mb-4 font-weight-bold text-white">Contacto</h4>
+            <p>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">caosnews@gmail.com</h5>
+            </p>
+            <p>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">(2) 2348 7197</h5>
+            </p>
+            <p>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">(+569) 4571 3008</h5>
+            </p>
+            </div>
+
+            <div class="row aling-items-center">
+            <div class="col-md-6  offset-md-3">
+                <p>Décima Avenida 1226, San Miguel, Región Metropolitana</p>
+            </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </footer>
+
+    <!--Libreria Bootstrap JS-->
+    <script src="{% static 'libs/BootStrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- javascript (bootstrap.bundle.min.js)
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>-->
+    {% block java %}
+
+    {% endblock java %}
+    </body>
+
+</html>
